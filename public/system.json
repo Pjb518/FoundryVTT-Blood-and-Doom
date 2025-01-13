@@ -2,7 +2,7 @@
   "id": "blood-and-doom",
   "title": "Blood and Doom",
   "description": "An official implementation of Blood and Doom for Foundry Virtual Tabletop.",
-  "version": "0.3.0",
+  "version": "0.1.0",
   "authors": [
     {
       "name": "Phillip Best",
