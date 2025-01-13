@@ -1,6 +1,6 @@
 import localize from "#utils/localize.ts";
 
-export default function getSetBackLabel(setback, successes, difficultyLevel) {
+export default function getSetbackLabel(setback, successes, difficultyLevel) {
   const baseSetback = "BLOOD_AND_DOOM.setbacks.base";
   const majorSetback = "BLOOD_AND_DOOM.setbacks.major";
   const minorSetback = "BLOOD_AND_DOOM.setbacks.minor";

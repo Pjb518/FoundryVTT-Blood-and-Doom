@@ -1,7 +1,7 @@
 <script>
     import getRollResultLabel from "../dataPreparationHelpers/getRollResultLabel.ts";
     import getRollSummaryLabel from "../dataPreparationHelpers/getRollSummaryLabel.ts";
-    import getSetBackLabel from "../dataPreparationHelpers/getSetBackLabel.ts";
+    import getSetbackLabel from "../dataPreparationHelpers/getSetbackLabel.ts";
     import { setContext } from "svelte";
 
     import CardHeader from "./components/CardHeader.svelte";
@@ -13,7 +13,7 @@
 
     let rollSummary = getRollSummaryLabel(system.successes, difficultyLevel);
     let rollResult = getRollResultLabel(system.successes, difficultyLevel);
-    let setbackLabel = getSetBackLabel(system.setback, system.successes, difficultyLevel);
+    let setbackLabel = getSetbackLabel(system.setback, system.successes, difficultyLevel);
 
     setContext("messageDocument", messageDocument);
 </script>
