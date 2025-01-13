@@ -1,0 +1,27 @@
+.system-blood-and-doom .bnd-u-unstyled-button {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+    outline: 0;
+  }
+
+  &:hover {
+    color: inherit;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+  }
+}

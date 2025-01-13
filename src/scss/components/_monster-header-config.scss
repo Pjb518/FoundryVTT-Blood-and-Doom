@@ -1,0 +1,19 @@
+.system-blood-and-doom .bnd-sheet .bnd-monster-header-config {
+  --bnd-sheet-input-text-alignment: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: var(--bnd-xs-text);
+
+    &--challenge {
+      --bnd-sheet-input-text-alignment: center;
+      --bnd-sheet-input-width: 3rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.system-blood-and-doom .bnd-sheet--monster-trait-config {
+  .window-header {
+    .header-control[data-action="copyUuid"],
+    .header-control[data-action="configureSheet"] {
+      display: none;
+    }
+  }
+}

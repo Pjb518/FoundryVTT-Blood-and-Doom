@@ -1,0 +1,111 @@
+.system-blood-and-doom .bnd-sheet .bnd-monster-features {
+  &__add-button {
+    width: fit-content;
+    padding: 0.125rem;
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    * {
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: none;
+      color: inherit;
+      transform: scale(1.2);
+    }
+  }
+
+  &__header {
+    display: flex;
+    gap: 0.5rem;
+    margin-block-end: 0.5rem;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-monster-feature-list {
+  columns: 2;
+  column-fill: balance;
+  column-rule: thin dotted var(--bnd-sheet-input-bottom-border-color);
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    display: contents;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-monster-feature {
+  break-inside: avoid-column;
+  margin-block-end: 0.75rem;
+
+  &__button {
+    width: fit-content;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 0.125rem;
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    &:hover {
+      color: inherit;
+      box-shadow: none;
+      transform: scale(1.2);
+    }
+
+    i {
+      margin: 0;
+    }
+  }
+
+  &__description {
+    > *:first-child {
+      margin-block-start: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__heading {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-monster-feature-config {
+  --bnd-sheet-input-text-alignment: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__field-label {
+    margin: 0;
+    white-space: nowrap;
+    font-family: var(--bnd-heading-font);
+    font-size: var(--bnd-xs-text);
+    font-weight: 500;
+    color: var(--bnd-heading-text-color);
+    border: 0;
+    text-shadow: none;
+
+    &--description:has(+ .editor.active) {
+      margin-block-end: 0.25rem;
+    }
+  }
+}

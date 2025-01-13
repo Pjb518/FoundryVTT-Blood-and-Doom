@@ -1,0 +1,31 @@
+# IDE
+.idea/
+.nova/
+.vs/
+
+# Node Modules
+node_modules/
+dist/
+
+# OS Specific
+.DS_Store
+
+*.zip
+.vite-cache/*
+
+# logs
+npm-debug.log
+yarn-error.log
+
+# ----------------------------------------------------
+# Compendium Packs
+# ----------------------------------------------------
+public/packs/**/*.db
+public/packs/**/*.log
+public/packs/**/*.old
+public/packs/**/*.ldb
+public/packs/**/LOCK
+public/packs/**/MANIFEST
+public/packs/**/CURRENT
+public/packs/**/LOG
+public/packs/**/MANIFEST-*

@@ -1,0 +1,32 @@
+.system-blood-and-doom .bnd-sheet .bnd-sheet-input {
+  display: flex;
+  align-items: var(--bnd-sheet-input-vertical-alignment, flex-end);
+  height: var(--bnd-sheet-input-height, auto);
+  width: var(--bnd-sheet-input-width, 100%);
+  background: transparent;
+  margin: var(--bnd-sheet-input-margin, 0);
+  padding: var(--bnd-sheet-input-padding, 0);
+  color: var(--bnd-primary-text-color);
+  font-family: var(--bnd-primary-font);
+  font-size: var(--bnd-sheet-input-font-size, var(--bnd-sm-text));
+  font-weight: var(--bnd-sheet-input-font-weight, 500);
+  text-align: var(--bnd-sheet-input-text-alignment, center);
+  line-height: 1;
+  border: 0;
+  border-bottom: 1px solid var(--bnd-sheet-input-bottom-border-color);
+  border-radius: 0;
+
+  &:active,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  &--power-name {
+    --bnd-sheet-input-text-alignment: start;
+  }
+
+  &--power-uses {
+    --bnd-sheet-input-width: 8ch;
+  }
+}

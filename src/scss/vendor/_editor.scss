@@ -1,0 +1,11 @@
+.system-blood-and-doom .bnd-sheet .editor {
+  &:not(.active) {
+    .editor-content > :first-child {
+      margin-block-start: 0.125rem;
+    }
+  }
+
+  .editor-content {
+    padding: 0;
+  }
+}

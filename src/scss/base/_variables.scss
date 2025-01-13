@@ -1,0 +1,61 @@
+:root {
+  /** FONTS **/
+  --bnd-primary-font: "Roboto Condensed", sans-serif;
+  --bnd-heading-font: var(--bnd-primary-font);
+
+  /** TEXT SIZEs **/
+  --bnd-xxs-text: 0.579rem;
+  --bnd-xs-text: 0.694rem;
+  --bnd-sm-text: 0.833rem;
+  --bnd-md-text: 1rem;
+  --bnd-lg-text: 1.2rem;
+  --bnd-xl-text: 1.44rem;
+  --bnd-xxl-text: 1.728rem;
+  --bnd-xxxl-text: 2.074rem;
+
+  /** COLORS **/
+  --bnd-primary-text-color: hsl(50, 14%, 9%);
+  --bnd-medium-text-color: hsl(50, 14%, 25%);
+  --bnd-heading-text-color: var(--bnd-medium-text-color);
+  --bnd-muted-heading-text-color: var(--bnd-medium-text-color);
+
+  --bnd-nav-button-background-color: hsla(44, 48%, 94%, 85%);
+  --bnd-nav-button-background-hover-color: hsla(50, 14%, 70%);
+  --bnd-nav-button-background-active-color: hsl(50, 14%, 25%);
+
+  --bnd-table-header-background-color: hsl(50, 14%, 25%);
+
+  --bnd-roll-result-success-color: hsl(118, 43%, 53%);
+  --bnd-roll-result-failure-color: hsl(3, 70%, 57%);
+  --bnd-roll-result-setback-color: hsl(265, 57%, 70%);
+
+  --bnd-attribute-header-background: var(--bnd-medium-text-color);
+  --bnd-attribute-heading-color: hsl(44, 48%, 94%);
+
+  --bnd-box-background-color: hsla(44, 48%, 94%, 85%);
+
+  --bnd-sheet-input-bottom-border-color: hsl(51, 14%, 65%);
+
+  --bnd-skill-color: var(--bnd-heading-text-color);
+
+  --bnd-pip-color: var(--bnd-medium-text-color);
+
+  /** ANIMATION **/
+  --bnd-standard-transition: all 0.15s ease-in-out;
+  --bnd-slow-transition: all 0.25s ease-in-out;
+
+  /** CHAT BACKGROUNDS **/
+  --bnd-chat-card-action-background: url("/systems/blood-and-doom/assets/chatBackgrounds/action-background.webp");
+  --bnd-chat-card-damage-background: url("/systems/blood-and-doom/assets/chatBackgrounds/damage-background.webp");
+  --bnd-chat-card-doom-background: url("/systems/blood-and-doom/assets/chatBackgrounds/doom-background.webp");
+
+  /** SHEET BACKGROUNDS **/
+  --bnd-player-character-sheet-background: url("/systems/blood-and-doom/assets/sheetBackgrounds/dark-mode.webp");
+
+  /** ELEMENT SIZES **/
+  --ability-modifier-box-dimensions: 2rem;
+  --ability-modifier-border-thickness: 3px;
+
+  /** LOGOS **/
+  --bnd-sheet-logo: url("/systems/blood-and-doom/assets/logos/grayscale-logo.webp");
+}

@@ -1,0 +1,23 @@
+.bnd-sheet .knowledge-skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--bnd-primary-font);
+  font-weight: 500;
+
+  &__item {
+    --bnd-sheet-input-width: 3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  &__label {
+    flex-grow: 1;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,84 @@
+.system-blood-and-doom .bnd-sheet .bnd-health-container {
+  --bnd-max-pip-width: 1.25rem;
+
+  grid-area: health;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "header header conditions"
+    "bruises scrapes conditions"
+    "wounds injuries conditions"
+    "madness madness conditions";
+  grid-template-columns: repeat(2, max-content) 1.25fr;
+  grid-template-rows: repeat(4, max-content);
+  gap: 0.5rem 0.75rem;
+  padding: 0.75rem;
+
+  &__config-button {
+    display: var(--bnd-health-config-button-display, none);
+    height: fit-content;
+    width: fit-content;
+    padding: 0.125rem;
+    margin: 0;
+    font-size: var(--bnd-sm-text);
+    line-height: 1;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: inherit;
+      background: transparent;
+      box-shadow: none;
+      transform: scale(1.2);
+    }
+
+    i {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      --bnd-health-config-button-display: block;
+    }
+  }
+
+  &__rest-button {
+    width: fit-content;
+    line-height: 1;
+    padding-block: 0.125rem;
+  }
+}
+
+.bnd-health-track {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+
+  &__label {
+    grid-area: label;
+    white-space: nowrap;
+  }
+
+  &__roll-range {
+    grid-area: rollRange;
+    font-size: var(--bnd-xxs-text);
+  }
+}

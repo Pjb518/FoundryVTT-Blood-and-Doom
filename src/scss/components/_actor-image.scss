@@ -1,0 +1,45 @@
+.system-blood-and-doom .bnd-sheet .bnd-actor-portrait {
+  grid-area: img;
+  height: 16.3125rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  overflow: clip;
+  border: 1px solid black;
+
+  &__button {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+
+    &:hover {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #000;
+      box-shadow: none;
+    }
+  }
+
+  &__image {
+    background: transparent;
+    border: 0;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
+.bnd-corruption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--bnd-box-background-color);
+  height: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+}

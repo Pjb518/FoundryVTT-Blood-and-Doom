@@ -1,0 +1,13 @@
+.bnd-monster-health-config {
+  --bnd-sheet-input-width: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}

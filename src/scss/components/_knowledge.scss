@@ -1,0 +1,103 @@
+.system-blood-and-doom .bnd-sheet .bnd-knowledge-container {
+  grid-area: knowledge;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 14.5rem;
+  padding: 0.75rem;
+  overflow: clip;
+
+  &__add-button,
+  &__config-button {
+    padding: 0.125rem;
+    margin: 0;
+    font-size: var(--bnd-sm-text);
+    line-height: 1;
+    color: inherit;
+    background: transparent;
+    border: 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: inherit;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    i {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    transition: var(--bnd-standard-transition);
+
+    &:hover {
+      text-shadow: 0 0 5px var(--color-shadow-primary);
+    }
+  }
+
+  &__config-button {
+    display: var(--bnd-knowledge-config-button-display, none);
+    height: fit-content;
+    width: fit-content;
+    transition: var(--bnd-standard-transition);
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 0.5rem;
+
+    &:hover {
+      --bnd-knowledge-config-button-display: block;
+    }
+  }
+
+  &__skill-list {
+    --bnd-sheet-input-width: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.25rem;
+    margin: 0;
+    margin-block-start: 1rem;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+  }
+
+  &__skill-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-inline: 0.25rem;
+    font-size: var(--bnd-sm-text);
+  }
+
+  &__skill-name {
+    white-space: nowrap;
+    font-size: inherit;
+  }
+}

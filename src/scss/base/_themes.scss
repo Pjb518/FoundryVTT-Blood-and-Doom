@@ -1,0 +1,30 @@
+.theme-dark {
+  /** COLORS **/
+  --bnd-box-background-color: hsla(247, 31%, 10%, 80%);
+
+  --bnd-primary-text-color: hsl(37, 42%, 89%);
+  --bnd-medium-text-color: hsl(28, 32%, 73%);
+  --bnd-heading-text-color: hsl(36, 53%, 80%);
+  --bnd-muted-heading-text-color: var(--bnd-medium-text-color);
+
+  --bnd-nav-button-background-color: hsla(247, 31%, 10%, 80%);
+  --bnd-nav-button-background-hover-color: hsla(260, 21%, 12%, 90%);
+  --bnd-nav-button-background-active-color: hsl(293, 10%, 17%);
+
+  --bnd-attribute-header-background: hsl(293, 10%, 17%);
+  --bnd-attribute-heading-color: hsl(37, 42%, 89%);
+
+  --bnd-table-header-background-color: hsl(293, 10%, 17%);
+
+  --bnd-skill-color: hsl(37, 42%, 89%);
+
+  --bnd-sheet-input-bottom-border-color: hsl(50, 14%, 25%);
+
+  --bnd-pip-color: hsl(36, 35%, 65%);
+
+  /** SHEET BACKGROUNDS **/
+  --bnd-player-character-sheet-background: url("/systems/blood-and-doom/assets/sheetBackgrounds/dark-mode.webp");
+
+  /** LOGOS **/
+  --bnd-sheet-logo: url("/systems/blood-and-doom/assets/logos/color-logo.webp");
+}

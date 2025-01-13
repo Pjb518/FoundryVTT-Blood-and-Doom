@@ -1,0 +1,64 @@
+.system-blood-and-doom .bnd-sheet .bnd-bio-editor {
+  grid-area: bio;
+  height: min-content;
+
+  &__content {
+    border-start-end-radius: 0;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-bio-editor-tabs {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__button {
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    margin: 0;
+    font-weight: 500;
+    background-color: var(--bnd-nav-button-background-color);
+    border-radius: 0;
+    border-inline-start-width: 0;
+    border-block-end: 0;
+    transition: var(--bnd-standard-transition);
+
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: inherit;
+      background: var(--bnd-nav-button-background-hover-color);
+      border-color: var(--button-border-color);
+      box-shadow: none;
+    }
+
+    &--active {
+      background: var(--bnd-nav-button-background-active-color);
+      color: var(--bnd-attribute-heading-color);
+
+      &:hover {
+        background: var(--bnd-nav-button-background-active-color);
+        color: var(--bnd-attribute-heading-color);
+      }
+    }
+  }
+
+  &__item {
+    display: contents;
+
+    &:first-of-type .bnd-bio-editor-tabs__button {
+      border-inline-start-width: 1px;
+      border-start-start-radius: 4px;
+    }
+
+    &:last-of-type .bnd-bio-editor-tabs__button {
+      border-start-end-radius: 4px;
+    }
+  }
+}

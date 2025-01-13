@@ -1,0 +1,313 @@
+.system-blood-and-doom .bnd-sheet .bnd-secondary-equipment {
+  display: grid;
+  grid-area: equipment;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+
+  &__add-button {
+    width: fit-content;
+    padding: 0.125rem;
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    * {
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: none;
+      color: inherit;
+      transform: scale(1.2);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    margin-block-end: 0.5rem;
+  }
+
+  &__heading {
+    width: fit-content;
+    white-space: nowrap;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-equipment-quantity-input {
+  padding: 0;
+  margin: 0;
+  width: 4ch;
+  height: auto;
+  color: var(--bnd-primary-text-color);
+  font-family: var(--bnd-primary-font);
+  font-size: var(--bnd-sm-text);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1;
+  background: transparent;
+  border-color: var(--bnd-sheet-input-bottom-border-color);
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-secondary-equipment-table {
+  margin: 0;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+
+  &:hover {
+    --bnd-button-cell-display: table-cell;
+    --bnd-button-cell-width: 2rem;
+  }
+
+  &__button {
+    padding: 0.125rem;
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    * {
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: none;
+      color: inherit;
+      transform: scale(1.2);
+    }
+  }
+
+  &__cell {
+    padding-inline: 0;
+    padding-block: 0.125rem;
+    font-size: var(--bnd-sm-text);
+    font-weight: 500;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &--button,
+    &--button {
+      display: var(--bnd-button-cell-display, none);
+      width: var(--bnd-button-cell-width, 0);
+      transition: all 1s ease-in-out;
+    }
+
+    &--checkbox {
+      width: 3rem;
+    }
+
+    &--fit {
+      width: 6rem;
+    }
+
+    &--button,
+    &--checkbox,
+    &--center,
+    &--empty-table,
+    &--fit {
+      text-align: center;
+    }
+
+    &--empty-table {
+      padding-block: 0.5rem;
+    }
+
+    &--header {
+      padding-block: 0.25rem;
+      font-weight: 600;
+    }
+
+    &:first-child {
+      padding-inline-start: 0.5rem;
+    }
+
+    &:last-child {
+      padding-inline-end: 0.25rem;
+    }
+  }
+
+  &__header {
+    background: var(--bnd-table-header-background-color);
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-treasure {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-treasure-list {
+  --bnd-sheet-input-text-alignment: start;
+  --bnd-sheet-input-padding: 0 0.125rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: contents;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-currency {
+  justify-self: flex-end;
+  display: flex;
+  gap: 1.5rem;
+  margin-block: 0.5rem;
+
+  &__field {
+    display: flex;
+    gap: 0.75rem;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-assets {
+  --bnd-sheet-input-text-alignment: start;
+  --bnd-sheet-input-padding: 0 0.125rem;
+
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-secondary-equipment-quantity-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-secondary-equipment-decrement-button {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  height: auto;
+  color: var(--bnd-primary-text-color);
+  font-size: var(--bnd-md-text);
+  line-height: 1;
+  background: transparent;
+  border: 0;
+  transition: var(--bnd-standard-transition);
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:hover {
+    box-shadow: none;
+    transform: scale(1.2);
+  }
+
+  i {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-miscellaneous-objects {
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  &__add-button {
+    width: fit-content;
+    padding: 0.125rem;
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    * {
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: none;
+      color: inherit;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-miscellaneous-objects-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__config-button {
+    display: var(--bnd-config-button-display, none);
+    flex-shrink: 0;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    font-size: var(--bnd-sm-text);
+    line-height: 1;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    &:active,
+    &:focus {
+      box-shadow: none;
+      outline: 0;
+    }
+
+    &:hover {
+      box-shadow: none;
+      transform: scale(1.2);
+    }
+
+    i {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.125rem 0.5rem;
+
+    &:hover {
+      --bnd-config-button-display: inline;
+    }
+
+    &:nth-of-type(even) {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__item-name {
+    flex-grow: 1;
+  }
+}

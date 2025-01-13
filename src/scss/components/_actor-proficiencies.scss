@@ -1,0 +1,33 @@
+.system-blood-and-doom .bnd-sheet .bnd-actor-proficiencies {
+  --bnd-sheet-input-text-alignment: start;
+  --bnd-sheet-input-padding: 0 0.125rem;
+
+  grid-area: proficiencies;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &:not(:last-of-type) {
+      padding-inline-end: 0.5rem;
+      border-inline-end: 1px dotted var(--bnd-sheet-input-bottom-border-color);
+    }
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-actor-proficiencies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: contents;
+  }
+}

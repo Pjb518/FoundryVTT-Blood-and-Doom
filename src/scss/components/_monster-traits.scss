@@ -1,0 +1,57 @@
+.system-blood-and-doom .bnd-sheet .bnd-monster-trait-list {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-items: start;
+  gap: 0.25rem 0.5rem;
+  width: 100%;
+  margin: 0;
+
+  &__config-button {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1rem;
+    background: transparent;
+    border: 0;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      color: inherit;
+
+      i {
+        text-shadow: 0 0 5px var(--color-shadow-primary);
+      }
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &__rule {
+    grid-column: 1 / -1;
+    margin-block: 0.25rem;
+    border: 0;
+  }
+
+  &__trait {
+    color: var(--bnd-primary-text-color);
+    text-shadow: none;
+  }
+
+  &__value {
+    display: inline;
+    margin: 0;
+
+    * {
+      display: inline;
+    }
+  }
+}

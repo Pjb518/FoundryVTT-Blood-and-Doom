@@ -1,0 +1,12 @@
+:root {
+  --sidebar-width: 336px;
+}
+
+[data-control="nextTurn"],
+[data-control="previousTurn"],
+[data-control="resetAll"],
+[data-control="rollAll"],
+[data-control="rollNPC"] {
+  opacity: 0;
+  pointer-events: none;
+}

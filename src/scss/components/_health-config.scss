@@ -1,0 +1,22 @@
+.system-blood-and-doom .bnd-sheet .bnd-health-config-field-group {
+  --bnd-pip-group-gap: 0.125rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1rem;
+
+  &__field {
+    font-size: var(--bnd-xs-text);
+    text-align: center;
+  }
+
+  &__header {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  &__label {
+    margin: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.bnd-logo {
+  border: 0;
+
+  &--sheet {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    background-image: var(--bnd-sheet-logo);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--sidebar {
+    padding-block: 0.5rem;
+    filter: invert(1);
+  }
+}

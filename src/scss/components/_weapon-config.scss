@@ -1,0 +1,38 @@
+.bnd-weapon-config {
+  --bnd-sheet-input-text-alignment: start;
+  --bnd-sheet-input-font-size: var(--bnd-sm-text);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+    font-size: var(--bnd-xs-text);
+    font-weight: 500;
+    color: var(--bnd-heading-text-color);
+
+    &--ability-skill-mod {
+      --bnd-sheet-input-width: 4rem;
+      --bnd-sheet-input-text-alignment: center;
+    }
+
+    &--checkbox {
+      flex-direction: row;
+      align-items: center;
+      font-size: var(--bnd-sm-text);
+    }
+
+    &--damage-type {
+      width: 10rem;
+    }
+  }
+}
+
+.bnd-damage-wrapper {
+  display: flex;
+  gap: 1rem;
+}

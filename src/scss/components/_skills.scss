@@ -1,0 +1,111 @@
+.bnd-skills-container {
+  position: relative;
+  grid-area: skills;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, max-content);
+  gap: 0rem 0.75rem;
+  height: fit-content;
+  padding: 0.75rem;
+
+  &__column {
+    overflow: hidden;
+  }
+
+  &__header {
+    grid-column: 1 / -1;
+    margin-block-end: 0.5rem;
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-ability-group {
+  --chamfer-size: 4px;
+
+  margin-block-end: 1.25rem;
+
+  &:has(+ .bnd-heading),
+  &:last-child {
+    margin-block-end: 0rem;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-block-end: 0.5rem;
+
+    &--mind {
+      width: 9.5rem;
+      margin-block-end: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 50%;
+    padding: 0;
+    transform: translateY(-50%);
+    width: var(--ability-modifier-box-dimensions);
+    height: var(--ability-modifier-box-dimensions);
+    border: var(--ability-modifier-border-thickness) solid var(--bnd-attribute-header-background);
+    text-align: center;
+    background: transparent;
+    border-radius: 0;
+
+    &:active,
+    &:focus {
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-skill {
+  --bnd-sheet-input-width: calc(var(--ability-modifier-box-dimensions) - 0.5rem);
+  --bnd-sheet-input-margin: 0 0.25rem 0 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.25rem;
+
+  &__button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    background: transparent;
+    border: 0;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__label {
+    margin-block-end: 0;
+    padding-inline-start: 0.5rem;
+    font-size: var(--bnd-sm-text);
+    font-family: var(--bnd-heading-font);
+    font-weight: 500;
+    color: var(--bnd-skill-color);
+    text-shadow: none;
+  }
+}

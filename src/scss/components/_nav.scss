@@ -1,0 +1,51 @@
+.system-blood-and-doom .bnd-sheet .bnd-nav {
+}
+
+.system-blood-and-doom .bnd-sheet .bnd-nav-list {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: contents;
+  }
+
+  &__button {
+    flex-grow: 1;
+    margin: 0;
+    font-weight: 600;
+    background-color: var(--bnd-nav-button-background-color);
+    border: 1px solid var(--bnd-nav-button-background-color);
+    border-radius: 3px;
+    filter: drop-shadow(0 0 5px #333);
+    transition: var(--bnd-standard-transition);
+
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: inherit;
+      background: var(--bnd-nav-button-background-hover-color);
+      border: 1px solid hsla(50, 14%, 70%);
+      box-shadow: none;
+    }
+
+    &--active {
+      background: var(--bnd-nav-button-background-active-color);
+      color: var(--bnd-attribute-heading-color);
+      border: 1px solid var(--bnd-sheet-input-bottom-border-color);
+
+      &:hover {
+        background: var(--bnd-nav-button-background-active-color);
+        color: var(--bnd-attribute-heading-color);
+        border: 1px solid var(--bnd-sheet-input-bottom-border-color);
+      }
+    }
+  }
+}

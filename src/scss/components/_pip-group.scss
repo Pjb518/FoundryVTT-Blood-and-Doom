@@ -1,0 +1,49 @@
+.system-blood-and-doom .bnd-pip-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, var(--bnd-max-pip-width, 2rem)));
+  justify-content: var(--bnd-pip-justification, center);
+  justify-items: var(--bnd-pip-justification, center);
+
+  &--flex {
+    display: flex;
+    justify-content: var(--bnd-pip-justification, space-between);
+    align-items: center;
+    flex-wrap: var(--bnd-pip-wrap, nowrap);
+    gap: var(--bnd-pip-group-gap, 0);
+  }
+
+  &__pip {
+    width: fit-content;
+    padding: 0;
+    color: var(--bnd-pip-color);
+    background: transparent;
+    border: 0;
+    transition: var(--bnd-standard-transition);
+
+    &--ghost {
+      opacity: 0.25;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: 0;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: transparent;
+      color: inherit;
+      transform: scale(1.2);
+    }
+
+    &:disabled {
+      pointer-events: none;
+    }
+  }
+}

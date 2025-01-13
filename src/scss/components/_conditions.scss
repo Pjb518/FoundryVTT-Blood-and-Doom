@@ -1,0 +1,30 @@
+.system-blood-and-doom .bnd-sheet .bnd-conditions {
+  --bnd-sheet-input-font-size: var(--bnd-xs-text);
+  --bnd-sheet-input-padding: 0 0.25rem;
+  --bnd-sheet-input-text-alignment: left;
+
+  grid-area: conditions;
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  grid-template-rows: max-content;
+  gap: 0.125rem 0.5rem;
+  height: 100%;
+  padding-inline-start: 0.75rem;
+  border-left: 1px dotted var(--bnd-sheet-input-bottom-border-color);
+
+  &__header {
+    --bnd-heading-font-size: var(--bnd-xs-text);
+
+    height: fit-content;
+    line-height: 1;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,54 @@
+.system-blood-and-doom .bnd-sheet .bnd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  &--dummy-momentum-button {
+    opacity: 0;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    i {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &--momentum-button {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+
+    i {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:active,
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &--momentum-wrapper {
+    --bnd-pip-group-gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  &--pip-wrapper {
+    gap: 0.5rem;
+  }
+}

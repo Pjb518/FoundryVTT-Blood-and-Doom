@@ -1,0 +1,42 @@
+.system-blood-and-doom .bnd-sheet .bnd-evasion-container {
+  --bnd-sheet-input-margin: 0 0.25rem;
+
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "scoreInput divider averageInput"
+    "scoreLabel . averageLabel";
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 0.25rem 0.25rem;
+  align-items: center;
+  justify-items: center;
+  padding-block-end: 0.5rem;
+  border-bottom: 1px dotted var(--bnd-sheet-input-bottom-border-color);
+
+  &__divider {
+    grid-area: divider;
+    font-size: var(--bnd-sm-text);
+    color: var(--bnd-heading-text-color);
+  }
+
+  &__header {
+    grid-area: header;
+    width: 100%;
+    margin-block-end: 0.25rem;
+  }
+
+  &__label {
+    --bnd-heading-font-size: var(--bnd-xs-text);
+
+    color: var(--bnd-muted-heading-text-color);
+    text-align: center;
+
+    &--average {
+      grid-area: averageLabel;
+    }
+
+    &--score {
+      grid-area: scoreLabel;
+    }
+  }
+}
