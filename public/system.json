@@ -2,7 +2,7 @@
 	"id": "blood-and-doom",
 	"title": "Blood and Doom",
 	"description": "An official implementation of Blood and Doom for Foundry Virtual Tabletop.",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"authors": [
 		{
 			"name": "Phillip Best",
@@ -40,7 +40,7 @@
 	"background": "systems/blood-and-doom/assets/banners/background.webp",
 	"url": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom",
 	"manifest": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom/releases/latest/download/system.json",
-	"download": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom/releases/download/0.1.0/blood-and-doom.zip",
+	"download": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom/releases/download/0.2.0/blood-and-doom.zip",
 	"documentTypes": {
 		"Actor": {
 			"character": {
