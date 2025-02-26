@@ -36,18 +36,18 @@ class BloodAndDoomChatMessage extends ChatMessage {
 		}
 
 		const dice = this.rolls[0]?.dice ?? [];
-		const successes: DiceTerm.Result[] = [];
+		const successfulDiceResults: DiceTerm.Result[] = [];
 
 		for (const dieSet of dice) {
 			for (const result of dieSet.results) {
-				if (result.result > 8) successes.push(result);
+				if (result.result >= 8) successfulDiceResults.push(result);
 			}
 		}
 
-		const newRoll = new Roll(`${this.system.diceQuantity - successes.length}d10`);
+		const newRoll = new Roll(`${this.system.diceQuantity - successfulDiceResults.length}d10`);
 		await newRoll.evaluate();
 
-		const results = [...newRoll.dice[0].results, ...successes];
+		const results = [...newRoll.dice[0].results, ...successfulDiceResults];
 
 		const reroll = Roll.fromTerms([
 			new foundry.dice.terms.Die({ number: this.system.diceQuantity, faces: 10, results }),
@@ -60,15 +60,18 @@ class BloodAndDoomChatMessage extends ChatMessage {
 			return acc;
 		}, 0);
 
-		await game.dice3d.showForRoll(
-			reroll,
+		game.dice3d.showForRoll(
+			newRoll,
 			game.user,
 			true,
 			this.whisper,
 			this.blind,
 			null,
 			this.speaker,
-			{ ghost: false, secret: false },
+			{
+				ghost: false,
+				secret: false,
+			},
 		);
 
 		this.update({
