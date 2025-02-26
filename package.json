@@ -1,6 +1,6 @@
 {
 	"name": "blood-and-doom",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "An official implementation of Blood and Doom for Foundry Virtual Tabletop.",
 	"main": "bloodAndDoom.mjs",
 	"type": "module",

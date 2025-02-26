@@ -1,76 +1,72 @@
 {
-  "id": "blood-and-doom",
-  "title": "Blood and Doom",
-  "description": "An official implementation of Blood and Doom for Foundry Virtual Tabletop.",
-  "version": "0.1.0",
-  "authors": [
-    {
-      "name": "Phillip Best",
-      "url": "https://bio.link/philbest",
-      "email": "me@phillip.best",
-      "discord": "philbest",
-      "ko-fi": "philbest",
-      "patreon": "ForgemasterModules"
-    }
-  ],
-  "scripts": [],
-  "esmodules": [
-    "bloodAndDoom.js"
-  ],
-  "styles": [
-    "style.css"
-  ],
-  "packs": [],
-  "socket": true,
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "grid": {
-    "distance": 5,
-    "units": "ft",
-    "type": 1
-  },
-  "primaryTokenAttribute": null,
-  "secondaryTokenAttribute": null,
-  "compatibility": {
-    "minimum": "12",
-    "verified": "12",
-    "maximum": "12"
-  },
-  "background": "systems/blood-and-doom/assets/banners/background.webp",
-  "url": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom",
-  "manifest": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom/releases/latest/download/system.json",
-  "download": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom/releases/download/0.1.0/blood-and-doom.zip",
-  "documentTypes": {
-    "Actor": {
-      "character": {
-        "htmlFields": [],
-        "filePathFields": {}
-      },
-      "npc": {
-        "htmlFields": [],
-        "filePathFields": {}
-      }
-    },
-    "ChatMessage": {
-      "action": {},
-      "damage": {},
-      "doom": {}
-    },
-    "Combatant": {
-      "character": {},
-      "npc": {}
-    },
-    "Item": {
-      "ammunition": {},
-      "equipment": {},
-      "miscellaneous": {},
-      "monsterFeature": {},
-      "weapon": {}
-    }
-  }
+	"id": "blood-and-doom",
+	"title": "Blood and Doom",
+	"description": "An official implementation of Blood and Doom for Foundry Virtual Tabletop.",
+	"version": "0.1.1",
+	"authors": [
+		{
+			"name": "Phillip Best",
+			"url": "https://bio.link/philbest",
+			"email": "me@phillip.best",
+			"discord": "philbest",
+			"ko-fi": "philbest",
+			"patreon": "ForgemasterModules"
+		}
+	],
+	"scripts": [],
+	"esmodules": ["bloodAndDoom.js"],
+	"styles": ["style.css"],
+	"packs": [],
+	"socket": true,
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"grid": {
+		"distance": 5,
+		"units": "ft",
+		"type": 1
+	},
+	"primaryTokenAttribute": null,
+	"secondaryTokenAttribute": null,
+	"compatibility": {
+		"minimum": "12",
+		"verified": "12",
+		"maximum": "12"
+	},
+	"background": "systems/blood-and-doom/assets/banners/background.webp",
+	"url": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom",
+	"manifest": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom/releases/latest/download/system.json",
+	"download": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom/releases/download/0.1.0/blood-and-doom.zip",
+	"documentTypes": {
+		"Actor": {
+			"character": {
+				"htmlFields": [],
+				"filePathFields": {}
+			},
+			"npc": {
+				"htmlFields": [],
+				"filePathFields": {}
+			}
+		},
+		"ChatMessage": {
+			"action": {},
+			"damage": {},
+			"doom": {}
+		},
+		"Combatant": {
+			"character": {},
+			"npc": {}
+		},
+		"Item": {
+			"ammunition": {},
+			"equipment": {},
+			"miscellaneous": {},
+			"monsterFeature": {},
+			"weapon": {}
+		}
+	}
 }
