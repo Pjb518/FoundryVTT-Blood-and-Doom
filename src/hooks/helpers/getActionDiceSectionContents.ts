@@ -20,11 +20,10 @@ export default function getActionDiceSectionContents() {
 	const actionDiceRowHeading = document.createElement('h4');
 	actionDiceRowHeading.classList.add('bnd-heading', 'bnd-heading--small');
 	actionDiceRowHeading.innerText = 'Action Dice Quantity';
-	actionDiceRowHeading.append(actionDiceExpandButton);
 
 	const actionDiceRowHeader = document.createElement('header');
 	actionDiceRowHeader.classList.add('bnd-roll-section__header');
-	actionDiceRowHeader.append(actionDiceRowHeading);
+	actionDiceRowHeader.append(actionDiceRowHeading, actionDiceExpandButton);
 
 	return [actionDiceRowHeader, ...actionDiceButtons];
 }

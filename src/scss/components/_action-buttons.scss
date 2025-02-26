@@ -29,6 +29,9 @@ $die-sizes: "4", "6", "8", "10", "12";
   &__header {
     --bnd-heading-text-color: var(--color-text-light-highlight);
 
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     grid-column: 1 / -1;
     padding-inline-start: 0.25rem;
     font-family: var(--bnd-primary-font);
@@ -238,6 +241,7 @@ $die-sizes: "4", "6", "8", "10", "12";
 
 .system-blood-and-doom .bnd-action-dice-expand-button {
     width: fit-content;
+    margin: 0;
     line-height: 1;
     background-color: transparent;
     border: none;
