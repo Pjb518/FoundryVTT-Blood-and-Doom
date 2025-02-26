@@ -5,9 +5,7 @@
 	"main": "bloodAndDoom.mjs",
 	"type": "module",
 	"scripts": {
-		"build": "npm run build:compendia && vite build",
-		"build:system": "vite build",
-		"build:compendia": "node ./build/buildCompendia.mjs",
+		"build": "vite build",
 		"dev": "vite",
 		"format": "npx @biomejs/biome format --write ./src/",
 		"lint": "npx @biomejs/biome lint ./src/",
@@ -53,7 +51,6 @@
 		"@league-of-foundry-developers/foundry-vtt-types": "github:League-of-Foundry-Developers/foundry-vtt-types#5ed85bf298dae89f8810231b654fae37f8c62ce4",
 		"@tsconfig/svelte": "^5.0.4",
 		"@types/node": "^22.13.5",
-		"classic-level": "^1.4.1",
 		"glob": "^11.0.1",
 		"postcss": "^8.5.3",
 		"sass": "^1.85.1",
