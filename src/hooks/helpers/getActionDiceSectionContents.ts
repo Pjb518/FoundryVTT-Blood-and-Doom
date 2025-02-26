@@ -1,37 +1,30 @@
-import performActionRoll from "../../rolls/performActionRoll.ts";
+import { createActionDieButton } from './createActionDieButton.ts';
 
 export default function getActionDiceSectionContents() {
-  // Create section for the action dice buttons
-  const actionDiceButtons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(diceQuantity => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.ariaLabel = "Select Action Dice Quantity";
-    button.dataset.diceQuantity = diceQuantity.toString();
-    button.classList.add("bnd-roll-button", "bnd-roll-button--die");
-    button.innerHTML = `<span class="bnd-roll-button__value">${diceQuantity.toString()}</span>`;
+	const actionDiceButtons: HTMLButtonElement[] = [];
 
-    button.addEventListener("click", (event) => {
-      const target = event.currentTarget as HTMLButtonElement | null;
+	for (let i = 1; i <= 18; i++) {
+		actionDiceButtons.push(createActionDieButton(i));
+	}
 
-      if (!target) return;
+	const actionDiceExpandButton = document.createElement('button');
+	actionDiceExpandButton.classList.add('bnd-action-dice-expand-button');
+	actionDiceExpandButton.dataset.expanded = 'false';
+	actionDiceExpandButton.dataset.tooltip = 'Toggle additional action dice';
+	actionDiceExpandButton.dataset.tooltipDirection = 'UP';
+	actionDiceExpandButton.innerHTML = `<i class="fa-solid fa-caret-right"></i>`;
+	actionDiceExpandButton.addEventListener('click', function () {
+		this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true';
+	});
 
-      const diceQuantity = target.dataset.diceQuantity ?? "1";
-      const activeDifficultyButton = document.querySelector(".bnd-roll-button--active") as HTMLButtonElement | null;
-      const actionDifficulty = activeDifficultyButton?.dataset.difficultyLevel ?? "NONE";
+	const actionDiceRowHeading = document.createElement('h4');
+	actionDiceRowHeading.classList.add('bnd-heading', 'bnd-heading--small');
+	actionDiceRowHeading.innerText = 'Action Dice Quantity';
+	actionDiceRowHeading.append(actionDiceExpandButton);
 
-      performActionRoll(parseInt(diceQuantity, 10), actionDifficulty);
-    });
+	const actionDiceRowHeader = document.createElement('header');
+	actionDiceRowHeader.classList.add('bnd-roll-section__header');
+	actionDiceRowHeader.append(actionDiceRowHeading);
 
-    return button;
-  })
-
-  const actionDiceRowHeader = document.createElement("header");
-  actionDiceRowHeader.classList.add("bnd-roll-section__header");
-
-  const actionDiceRowHeading = document.createElement("h4");
-  actionDiceRowHeading.classList.add("bnd-heading", "bnd-heading--small")
-  actionDiceRowHeading.innerText = "Action Dice Quantity";
-  actionDiceRowHeader.append(actionDiceRowHeading);
-
-  return [actionDiceRowHeader, ...actionDiceButtons];
+	return [actionDiceRowHeader, ...actionDiceButtons];
 }

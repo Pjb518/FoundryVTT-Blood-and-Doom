@@ -42,6 +42,10 @@ $die-sizes: "4", "6", "8", "10", "12";
     &--damage-modifier {
       grid-area: damageModifierHeading;
     }
+
+    &:has( [data-expanded="true"]) ~ .bnd-roll-button {
+        display: flex;
+    }
   }
 
   &--damage-dice {
@@ -97,6 +101,10 @@ $die-sizes: "4", "6", "8", "10", "12";
     0 0 5px var(--color-shadow-dark);
   transition: var(--bnd-standard-transition);
   text-shadow: 0 0 10px black;
+
+  &:nth-of-type(n + 13) {
+      display: none;
+  }
 
   &__value {
     z-index: 1;
@@ -226,4 +234,23 @@ $die-sizes: "4", "6", "8", "10", "12";
   font-size: var(--bnd-sm-text);
   font-weight: 500;
   cursor: pointer;
+}
+
+.system-blood-and-doom .bnd-action-dice-expand-button {
+    width: fit-content;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    box-shadow: none;
+    outline: 0;
+    cursor: pointer;
+
+    i {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &[data-expanded="true"] i {
+        transform: rotate(90deg);
+    }
 }
