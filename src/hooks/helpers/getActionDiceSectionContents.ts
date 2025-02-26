@@ -10,11 +10,15 @@ export default function getActionDiceSectionContents() {
 	const actionDiceExpandButton = document.createElement('button');
 	actionDiceExpandButton.classList.add('bnd-action-dice-expand-button');
 	actionDiceExpandButton.dataset.expanded = 'false';
-	actionDiceExpandButton.dataset.tooltip = 'Toggle additional action dice';
-	actionDiceExpandButton.dataset.tooltipDirection = 'UP';
-	actionDiceExpandButton.innerHTML = `<i class="fa-solid fa-caret-right"></i>`;
+	actionDiceExpandButton.innerHTML = `Expand <i class="fa-solid fa-plus"></i>`;
 	actionDiceExpandButton.addEventListener('click', function () {
-		this.dataset.expanded = this.dataset.expanded === 'true' ? 'false' : 'true';
+		if (this.dataset.expanded === 'true') {
+			this.dataset.expanded = 'false';
+			this.innerHTML = `Expand <i class="fa-solid fa-plus"></i>`;
+		} else {
+			this.dataset.expanded = 'true';
+			this.innerHTML = `Collapse <i class="fa-solid fa-minus"></i>`;
+		}
 	});
 
 	const actionDiceRowHeading = document.createElement('h4');
