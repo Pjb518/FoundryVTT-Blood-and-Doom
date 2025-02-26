@@ -77,6 +77,10 @@
       color: var(--bnd-roll-result-failure-color);
     }
 
+    &--rerolled {
+      color: var(--bnd-roll-result-rerolled-color);
+    }
+
     &--uppercase {
       text-transform: uppercase;
     }
