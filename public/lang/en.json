@@ -1,144 +1,144 @@
 {
-  "TYPES": {
-    "Actor": {
-      "character": "Character",
-      "npc": "NPC"
-    },
-    "Combatant": {
-      "character": "Character",
-      "npc": "NPC"
-    },
-    "Item": {
-      "ammunition": "Ammunition",
-      "monsterFeature": "Monster Action",
-      "equipment": "Equipment",
-      "miscellaneous": "Miscellaneous Objects",
-      "weapon": "Weapon"
-    }
-  },
-  "BLOOD_AND_DOOM": {
-    "abilities": {
-      "strength": "Strength",
-      "dexterity": "Dexterity",
-      "agility": "Agility",
-      "awareness": "Awareness",
-      "intellect": "Intellect",
-      "wisdom": "Wisdom",
-      "heart": "Heart",
-      "mystique": "Mystique",
-      "presence": "Presence"
-    },
-    "abilityCategories": {
-      "body": "Body",
-      "mind": "Mind",
-      "soul": "Soul"
-    },
-    "healthTracks": {
-      "bruises": "Bruises",
-      "scrapes": "Scrapes",
-      "wounds": "Wounds",
-      "injuries": "Injuries",
-      "madness": "Madness"
-    },
-    "healthTrackAbbreviations": {
-      "bruises": "Br",
-      "scrapes": "Sc",
-      "wounds": "Wo",
-      "injuries": "In"
-    },
-    "knowledgeSkills": {
-      "alchemyAndTransmutation": "Alchemy & Transmutation",
-      "archeologyAndArtifacts": "Archeology & Artifacts",
-      "artAndAppraisal": "Art & Appraisal",
-      "artificeAndMechanisms": "Artifice & Mechanisms",
-      "astrologyAndCosmology": "Astrology & Cosmology",
-      "cartographyAndMaps": "Cartography & Maps",
-      "craftsAndRepair": "Craft & Repair",
-      "diplomacyAndPolitics": "Diplomacy & Politics",
-      "explorationAndWilderness": "Exploration & Wilderness",
-      "herbalismAndHealing": "Herbalism & Healing",
-      "historyAndCulture": "History & Culture",
-      "justiceAndLaw": "Justice & Law",
-      "languageAndTranslation": "Language & Translation",
-      "mathAndScience": "Math & Science",
-      "monstersAndMyth": "Monsters & Myth",
-      "natureAndAnimals": "Nature & Animals",
-      "occultAndParanormal": "Occult & Paranormal",
-      "organizationAndAdministration": "Organization & Administration",
-      "poisonAndDisease": "Poison & Disease",
-      "religionAndSpiritualism": "Religion & Spiritualism",
-      "sailingAndShips": "Sailing & Ships",
-      "sorceryAndMagic": "Sorcery & Magic",
-      "strategyAndWarfare": "Strategy & Warfare",
-      "thieveryAndCrime": "Thievery & Crime"
-    },
-    "prompts": {},
-    "resolveTypes": {
-      "toughness": "Toughness",
-      "reflexes": "Reflexes",
-      "focus": "Focus",
-      "composure": "Composure",
-      "willpower": "Willpower"
-    },
-    "rollResults": {
-      "failure": "Failure",
-      "setback": "Setback",
-      "success": "Success",
-      "successWithExcess": "Success +{excess}"
-    },
-    "rollSummaries": {
-      "success": "1 Success",
-      "successes": "{successes} Successes",
-      "successWithDifficulty": "1 Success vs. Difficulty {difficulty}",
-      "successesWithDifficulty": "{successes} Successes vs. Difficulty {difficulty}"
-    },
-    "rollTabs": {
-      "action": "Action Dice",
-      "damage": "Damage Dice",
-      "doom": "Doom Roll"
-    },
-    "setbacks": {
-      "base": "Setback",
-      "major": "Major Setback",
-      "minor": "Minor Setback"
-    },
-    "sheets": {
-      "ammunition": "Ammunition Sheet",
-      "character": "Player Character Sheet",
-      "equipment": "Equipment Sheet",
-      "monsterFeature": "Monster Feature Sheet",
-      "miscellaneous": "Miscellaneous Object Sheet",
-      "npc": "NPC Sheet",
-      "weapon": "Weapon Sheet"
-    },
-    "skills": {
-      "acrobatics": "Acrobatics",
-      "animalKen": "Animal Ken",
-      "athletics": "Athletics",
-      "charm": "Charm",
-      "connect": "Connect",
-      "deception": "Deception",
-      "empathy": "Empathy",
-      "finesseAttack": "Finesse Attack",
-      "healing": "Healing",
-      "insight": "Insight",
-      "intimidation": "Intimidation",
-      "heavyAttack": "Heavy Attack",
-      "investigation": "Investigation",
-      "leadership": "Leadership",
-      "locksAndTraps": "Locks & Traps",
-      "navigation": "Navigation",
-      "perception": "Perception",
-      "performance": "Performance",
-      "persuasion": "Persuasion",
-      "rangedAttack": "Ranged Attack",
-      "reasonAndLogic": "Reason & Logic",
-      "sleightOfHand": "Sleight of Hand",
-      "stealth": "Stealth",
-      "studyAndWrite": "Study & Write",
-      "survival": "Survival",
-      "tracking": "Tracking",
-      "unarmedAttack": "Unarmed Attack"
-    }
-  }
+	"TYPES": {
+		"Actor": {
+			"character": "Character",
+			"npc": "NPC"
+		},
+		"Combatant": {
+			"character": "Character",
+			"npc": "NPC"
+		},
+		"Item": {
+			"ammunition": "Ammunition",
+			"monsterFeature": "Monster Action",
+			"equipment": "Equipment",
+			"miscellaneous": "Miscellaneous Objects",
+			"weapon": "Weapon"
+		}
+	},
+	"BLOOD_AND_DOOM": {
+		"abilities": {
+			"strength": "Strength",
+			"dexterity": "Dexterity",
+			"agility": "Agility",
+			"awareness": "Awareness",
+			"intellect": "Intellect",
+			"wisdom": "Wisdom",
+			"heart": "Heart",
+			"mystique": "Mystique",
+			"presence": "Presence"
+		},
+		"abilityCategories": {
+			"body": "Body",
+			"mind": "Mind",
+			"soul": "Soul"
+		},
+		"healthTracks": {
+			"bruises": "Bruises",
+			"scrapes": "Scrapes",
+			"wounds": "Wounds",
+			"injuries": "Injuries",
+			"madness": "Madness"
+		},
+		"healthTrackAbbreviations": {
+			"bruises": "Br",
+			"scrapes": "Sc",
+			"wounds": "Wo",
+			"injuries": "In"
+		},
+		"knowledgeSkills": {
+			"alchemyAndTransmutation": "Alchemy & Transmutation",
+			"archeologyAndArtifacts": "Archeology & Artifacts",
+			"artAndAppraisal": "Art & Appraisal",
+			"artificeAndMechanisms": "Artifice & Mechanisms",
+			"astrologyAndCosmology": "Astrology & Cosmology",
+			"cartographyAndMaps": "Cartography & Maps",
+			"craftsAndRepair": "Craft & Repair",
+			"diplomacyAndPolitics": "Diplomacy & Politics",
+			"explorationAndWilderness": "Exploration & Wilderness",
+			"herbalismAndHealing": "Herbalism & Healing",
+			"historyAndCulture": "History & Culture",
+			"justiceAndLaw": "Justice & Law",
+			"languageAndTranslation": "Language & Translation",
+			"mathAndScience": "Math & Science",
+			"monstersAndMyth": "Monsters & Myth",
+			"natureAndAnimals": "Nature & Animals",
+			"occultAndParanormal": "Occult & Paranormal",
+			"organizationAndAdministration": "Organization & Administration",
+			"poisonAndDisease": "Poison & Disease",
+			"religionAndSpiritualism": "Religion & Spiritualism",
+			"sailingAndShips": "Sailing & Ships",
+			"sorceryAndMagic": "Sorcery & Magic",
+			"strategyAndWarfare": "Strategy & Warfare",
+			"thieveryAndCrime": "Thievery & Crime"
+		},
+		"prompts": {},
+		"resolveTypes": {
+			"toughness": "Toughness",
+			"reflexes": "Reflexes",
+			"focus": "Focus",
+			"composure": "Composure",
+			"willpower": "Willpower"
+		},
+		"rollResults": {
+			"failure": "Failure",
+			"setback": "Setback",
+			"success": "Success",
+			"successWithExcess": "Success +{excess}"
+		},
+		"rollSummaries": {
+			"success": "1 Success",
+			"successes": "{successes} Successes",
+			"successWithDifficulty": "1 Success vs. Difficulty {difficulty}",
+			"successesWithDifficulty": "{successes} Successes vs. Difficulty {difficulty}"
+		},
+		"rollTabs": {
+			"action": "Action Dice",
+			"damage": "Damage Dice",
+			"doom": "Doom Roll"
+		},
+		"setbacks": {
+			"base": "Setback",
+			"major": "Major Setback",
+			"minor": "Minor Setback"
+		},
+		"sheets": {
+			"ammunition": "Ammunition Sheet",
+			"character": "Player Character Sheet",
+			"equipment": "Equipment Sheet",
+			"monsterFeature": "Monster Feature Sheet",
+			"miscellaneous": "Miscellaneous Object Sheet",
+			"npc": "NPC Sheet",
+			"weapon": "Weapon Sheet"
+		},
+		"skills": {
+			"acrobatics": "Acrobatics",
+			"animalKen": "Animal Ken",
+			"athletics": "Athletics",
+			"charm": "Charm",
+			"connect": "Connect",
+			"deception": "Deception",
+			"empathy": "Empathy",
+			"finesseAttack": "Finesse Attack",
+			"healing": "Healing",
+			"influence": "Influence",
+			"insight": "Insight",
+			"intimidation": "Intimidation",
+			"heavyAttack": "Heavy Attack",
+			"investigation": "Investigation",
+			"leadership": "Leadership",
+			"locksAndTraps": "Locks & Traps",
+			"navigation": "Navigation",
+			"perception": "Perception",
+			"performance": "Performance",
+			"rangedAttack": "Ranged Attack",
+			"reasonAndLogic": "Reason & Logic",
+			"sleightOfHand": "Sleight of Hand",
+			"stealth": "Stealth",
+			"studyAndWrite": "Study & Write",
+			"survival": "Survival",
+			"tracking": "Tracking",
+			"unarmedAttack": "Unarmed Attack"
+		}
+	}
 }

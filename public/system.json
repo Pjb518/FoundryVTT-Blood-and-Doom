@@ -15,7 +15,7 @@
 	],
 	"scripts": [],
 	"esmodules": ["bloodAndDoom.js"],
-	"styles": ["style.css"],
+	"styles": ["bloodAndDoom.css"],
 	"packs": [],
 	"socket": true,
 	"languages": [
