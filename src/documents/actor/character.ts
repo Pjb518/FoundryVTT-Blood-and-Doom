@@ -1,8 +1,8 @@
-import type { BloodAndDoomCharacterData } from '../../models/actor/CharacterDataModel.ts';
-import { BloodAndDoomBaseActor } from './base.svelte.ts';
+import type { BloodAndDoomCharacterData } from "../../models/actor/CharacterDataModel.ts";
+import { BloodAndDoomBaseActor } from "./base.svelte.ts";
 
-import GenericDialog from '../dialogs/GenericDialog.svelte.ts';
-import KnowledgeSkillsConfigDialog from "../../view/dialogs/KnowledgeSkillsConfigDialog.svelte"
+import GenericDialog from "../dialogs/GenericDialog.svelte.ts";
+import KnowledgeSkillsConfigDialog from "../../view/dialogs/KnowledgeSkillsConfigDialog.svelte";
 
 export class BloodAndDoomCharacter extends BloodAndDoomBaseActor {
   declare system: BloodAndDoomCharacterData;
@@ -15,15 +15,15 @@ export class BloodAndDoomCharacter extends BloodAndDoomBaseActor {
 
     const actorData = this.system;
 
-    actorData.abilities['mind'] = this.calculateMindScore(actorData);
+    actorData.abilities["mind"] = this.calculateMindScore(actorData);
     actorData.magic["total"] = actorData.magic.ability + actorData.magic.skill;
   }
 
   calculateMindScore(actorData): number {
     const baseMindScores = [
-      actorData.abilities['awareness'],
-      actorData.abilities['intellect'],
-      actorData.abilities['wisdom']
+      actorData.abilities["awareness"],
+      actorData.abilities["intellect"],
+      actorData.abilities["wisdom"],
     ];
 
     const sumOfBaseScore = baseMindScores.reduce((a, b) => a + b);
@@ -36,22 +36,20 @@ export class BloodAndDoomCharacter extends BloodAndDoomBaseActor {
       `${this.name}: Configure Knowledge Skills`,
       KnowledgeSkillsConfigDialog,
       { document: this },
-      { icon: 'fa-solid fa-book-icon' }
-    )
+      { icon: "fa-solid fa-book-icon" },
+    );
 
-    dialog.render(true)
+    dialog.render(true);
   }
 
   async triggerLongRest() {
-    const madness = this.system.health.madness.value;
-
     this.update({
       "system.health": {
         "bruises.value": 0,
-        "madness.value": Math.max(0, madness - 3),
+        "madness.value": 0,
         "scrapes.value": 0,
         "wounds.value": 0,
-      }
-    })
+      },
+    });
   }
 }
