@@ -14,5 +14,5 @@ Hooks.once("ready", ready);
 
 Hooks.on("activateAbstractSidebarTab", activateAbstractSidebarTab);
 Hooks.on("collapseSidebar", collapseSidebar);
-Hooks.on("renderChatMessage", renderChatMessage);
+Hooks.on("renderChatMessageHTML", renderChatMessage);
 Hooks.on("renderCombatTracker", renderCombatTracker);
