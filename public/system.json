@@ -35,7 +35,7 @@
   "compatibility": {
     "minimum": "12",
     "verified": "12",
-    "maximum": "12"
+    "maximum": "13"
   },
   "background": "systems/blood-and-doom/assets/banners/background.webp",
   "url": "https://github.com/Pjb518/FoundryVTT-Blood-and-Doom",
