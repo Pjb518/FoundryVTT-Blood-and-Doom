@@ -1,5 +1,10 @@
+import { renderRollInterface } from "./helpers/renderRollIntercace.ts";
+
 export default function renderAbstractSidebarTab(tab) {
-  if (!tab || tab.id !== "settings") return;
+  document.querySelector("#roll-interface-wrapper")?.remove();
+
+  if (tab?.id === "chat") renderRollInterface();
+  if (tab.id !== "settings") return;
 
   const systemRow = tab.element.querySelector("#settings .info");
 

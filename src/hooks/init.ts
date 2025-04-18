@@ -1,37 +1,37 @@
-import { BLOOD_AND_DOOM } from '../config.js';
-import { BLOOD_AND_DOOM_GAME } from '../game.ts';
+import { BLOOD_AND_DOOM } from "../config.js";
+import { BLOOD_AND_DOOM_GAME } from "../game.ts";
 
 // Document proxies
-import ActorProxy from '../documents/actor/actorProxy.ts';
-import ItemProxy from '../documents/item/itemProxy.ts';
+import ActorProxy from "../documents/actor/actorProxy.ts";
+import ItemProxy from "../documents/item/itemProxy.ts";
 
 // Chat
-import { BloodAndDoomChatMessage } from '../documents/chatMessage.ts';
+import { BloodAndDoomChatMessage } from "../documents/chatMessage.ts";
 
 // Combat
-import { BloodAndDoomCombat } from '../documents/combat/combat.svelte.ts';
-import { BloodAndDoomCombatant } from '../documents/combat/combatant.svelte.ts';
+import { BloodAndDoomCombat } from "../documents/combat/combat.svelte.ts";
+import { BloodAndDoomCombatant } from "../documents/combat/combatant.svelte.ts";
 
 // Data models
-import actorDataModels from '../models/actor/actorDataModels.ts';
-import chatDataModels from '../models/chat/chatDataModels.ts';
-import combatantDataModels from '../models/combatant/combatantDataModels.ts';
-import itemDataModels from '../models/item/itemDataModels.ts';
+import actorDataModels from "../models/actor/actorDataModels.ts";
+import chatDataModels from "../models/chat/chatDataModels.ts";
+import combatantDataModels from "../models/combatant/combatantDataModels.ts";
+import itemDataModels from "../models/item/itemDataModels.ts";
 
 // Dice
-import { SetbackDie } from '../documents/dice/SetbackDie.ts';
+import { SetbackDie } from "../documents/dice/SetbackDie.ts";
 
 // Tokens
-import { BloodAndDoomTokenDocument } from '../documents/token/tokenDocument.ts';
+import { BloodAndDoomTokenDocument } from "../documents/token/tokenDocument.ts";
 
 // Sheets
-import NPCSheet from '../documents/sheets/NPCSheet.svelte.ts';
-import PlayerCharacterSheet from '../documents/sheets/PlayerCharacterSheet.svelte.ts';
-import AmmunitionSheet from '../documents/sheets/AmmunitionSheet.svelte.ts';
-import EquipmentSheet from '../documents/sheets/EquipmentSheet.svelte.ts';
-import MiscellaneousObjectSheet from '../documents/sheets/MiscellaneousObjectSheet.svelte copy.ts';
-import MonsterFeatureSheet from '../documents/sheets/MonsterFeatureSheet.svelte.ts';
-import WeaponSheet from '../documents/sheets/WeaponSheet.svelte.ts';
+import NPCSheet from "../documents/sheets/NPCSheet.svelte.ts";
+import PlayerCharacterSheet from "../documents/sheets/PlayerCharacterSheet.svelte.ts";
+import AmmunitionSheet from "../documents/sheets/AmmunitionSheet.svelte.ts";
+import EquipmentSheet from "../documents/sheets/EquipmentSheet.svelte.ts";
+import MiscellaneousObjectSheet from "../documents/sheets/MiscellaneousObjectSheet.svelte copy.ts";
+import MonsterFeatureSheet from "../documents/sheets/MonsterFeatureSheet.svelte.ts";
+import WeaponSheet from "../documents/sheets/WeaponSheet.svelte.ts";
 
 export default function init() {
   CONFIG.BLOOD_AND_DOOM = BLOOD_AND_DOOM;
@@ -59,49 +59,49 @@ export default function init() {
   TooltipManager.TOOLTIP_ACTIVATION_MS = 100;
 
   // Sheet registration
-  Actors.unregisterSheet('core', ActorSheet);
+  Actors.unregisterSheet("core", ActorSheet);
 
-  Actors.registerSheet('bloodAndDoom', NPCSheet, {
-    types: ['npc'],
+  Actors.registerSheet("bloodAndDoom", NPCSheet, {
+    types: ["npc"],
     makeDefault: true,
-    label: 'BLOOD_AND_DOOM.sheets.npc'
+    label: "BLOOD_AND_DOOM.sheets.npc",
   });
 
-  Actors.registerSheet('bloodAndDoom', PlayerCharacterSheet, {
-    types: ['character'],
+  Actors.registerSheet("bloodAndDoom", PlayerCharacterSheet, {
+    types: ["character"],
     makeDefault: true,
-    label: 'BLOOD_AND_DOOM.sheets.character'
+    label: "BLOOD_AND_DOOM.sheets.character",
   });
 
-  Items.unregisterSheet('core', ItemSheet);
+  Items.unregisterSheet("core", ItemSheet);
 
-  Items.registerSheet('bloodAndDoom', AmmunitionSheet, {
-    types: ['ammunition'],
+  Items.registerSheet("bloodAndDoom", AmmunitionSheet, {
+    types: ["ammunition"],
     makeDefault: true,
-    label: 'BLOOD_AND_DOOM.sheets.ammunition'
+    label: "BLOOD_AND_DOOM.sheets.ammunition",
   });
 
-  Items.registerSheet('bloodAndDoom', EquipmentSheet, {
-    types: ['equipment'],
+  Items.registerSheet("bloodAndDoom", EquipmentSheet, {
+    types: ["equipment"],
     makeDefault: true,
-    label: 'BLOOD_AND_DOOM.sheets.equipment'
+    label: "BLOOD_AND_DOOM.sheets.equipment",
   });
 
-  Items.registerSheet('bloodAndDoom', MiscellaneousObjectSheet, {
-    types: ['miscellaneous'],
+  Items.registerSheet("bloodAndDoom", MiscellaneousObjectSheet, {
+    types: ["miscellaneous"],
     makeDefault: true,
-    label: 'BLOOD_AND_DOOM.sheets.miscellaneous'
+    label: "BLOOD_AND_DOOM.sheets.miscellaneous",
   });
 
-  Items.registerSheet('bloodAndDoom', MonsterFeatureSheet, {
-    types: ['monsterFeature'],
+  Items.registerSheet("bloodAndDoom", MonsterFeatureSheet, {
+    types: ["monsterFeature"],
     makeDefault: true,
-    label: 'BLOOD_AND_DOOM.sheets.monsterFeature'
+    label: "BLOOD_AND_DOOM.sheets.monsterFeature",
   });
 
-  Items.registerSheet('bloodAndDoom', WeaponSheet, {
-    types: ['weapon'],
+  Items.registerSheet("bloodAndDoom", WeaponSheet, {
+    types: ["weapon"],
     makeDefault: true,
-    label: 'BLOOD_AND_DOOM.sheets.weapon'
+    label: "BLOOD_AND_DOOM.sheets.weapon",
   });
 }

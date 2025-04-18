@@ -1,16 +1,18 @@
 import "./scss/main.scss";
 
-import init from "./hooks/init.ts";
+import activateAbstractSidebarTab from "./hooks/activateAbstractSidebarTab.ts";
+import collapseSidebar from "./hooks/collapseSidebar.ts";
 import i18nInit from "./hooks/i18nInit.ts";
-import renderChatLog from "./hooks/renderChatLog.ts";
+import init from "./hooks/init.ts";
+import ready from "./hooks/ready.ts";
 import renderChatMessage from "./hooks/renderChatMessage.ts";
-import renderSettings from "./hooks/renderSettings.ts";
 import renderCombatTracker from "./hooks/renderCombatTracker.ts";
 
 Hooks.once("init", init);
 Hooks.once("i18nInit", i18nInit);
+Hooks.once("ready", ready);
 
-Hooks.on("renderChatLog", renderChatLog);
+Hooks.on("activateAbstractSidebarTab", activateAbstractSidebarTab);
+Hooks.on("collapseSidebar", collapseSidebar);
 Hooks.on("renderChatMessage", renderChatMessage);
-Hooks.on("activateAbstractSidebarTab", renderSettings);
 Hooks.on("renderCombatTracker", renderCombatTracker);
