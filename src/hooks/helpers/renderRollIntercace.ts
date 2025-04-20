@@ -25,6 +25,7 @@ export function renderRollInterface() {
     }
 
     button.innerText = localize(`BLOOD_AND_DOOM.rollTabs.${tab}`);
+    button.type = "button";
     button.dataset.bndTab = tab;
     button.addEventListener("click", toggleRollInterfaceTab);
 
