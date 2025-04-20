@@ -7,12 +7,19 @@ import init from "./hooks/init.ts";
 import ready from "./hooks/ready.ts";
 import renderChatMessage from "./hooks/renderChatMessage.ts";
 import renderCombatTracker from "./hooks/renderCombatTracker.ts";
+import { renderRollInterface } from "./hooks/helpers/renderRollIntercace.ts";
 
 Hooks.once("init", init);
 Hooks.once("i18nInit", i18nInit);
 Hooks.once("ready", ready);
 
 Hooks.on("activateAbstractSidebarTab", activateAbstractSidebarTab);
+
+Hooks.on("activateAbstractSidebarTab", () => {
+  document.querySelector("#roll-interface-wrapper")?.remove();
+  renderRollInterface();
+});
+
 Hooks.on("collapseSidebar", collapseSidebar);
 Hooks.on("renderChatMessageHTML", renderChatMessage);
 Hooks.on("renderCombatTracker", renderCombatTracker);

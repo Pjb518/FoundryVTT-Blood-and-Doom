@@ -262,3 +262,10 @@ $die-sizes: "4", "6", "8", "10", "12";
         font-size: var(--bnd-sm-text);
     }
 }
+
+#roll-interface-wrapper {
+    padding: 0.5rem 0.25rem;
+    background: var(--background-color, var(--color-cool-5));
+    border: 2px solid var(--border-color, var(--color-cool-4));
+    border-radius: 4px;
+}
