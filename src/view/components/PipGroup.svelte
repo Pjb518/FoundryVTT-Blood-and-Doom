@@ -14,20 +14,24 @@
         {@const active = i < markedPips}
 
         <button
-            class="bnd-pip-group__pip {active ? 'fa-solid' : 'fa-regular'} fa-square-full"
+            class="bnd-pip-group__pip"
             aria-label="Toggle pip"
             type="button"
             {disabled}
             onclick={() => onSelectPip?.(i + 1)}
-        ></button>
+        >
+            <i class="{active ? 'fa-solid' : 'fa-regular'} fa-square-full"></i>
+        </button>
     {/each}
 
     {#each { length: ghostPips }}
         <button
-            class="bnd-pip-group__pip bnd-pip-group__pip--ghost fa-regular fa-square-full"
+            class="bnd-pip-group__pip bnd-pip-group__pip--ghost"
             aria-label="Toggle pip"
             type="button"
             disabled
-        ></button>
+        >
+            <i class="fa-regular fa-square-full"></i>
+        </button>
     {/each}
 </div>
