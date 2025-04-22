@@ -1,6 +1,10 @@
-import { renderRollInterface } from "./helpers/renderRollIntercace.ts";
-
 export default function collapseSidebar() {
-  document.querySelector("#roll-interface-wrapper")?.remove();
-  renderRollInterface();
+  const chatMessage = document.querySelector("#chat-message");
+
+  const rollInterface = document.querySelector(
+    "#roll-interface-wrapper",
+  ) as HTMLElement;
+
+  chatMessage!.after(rollInterface);
+  rollInterface.hidden = false;
 }

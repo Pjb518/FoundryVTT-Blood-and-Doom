@@ -7,7 +7,6 @@ import init from "./hooks/init.ts";
 import ready from "./hooks/ready.ts";
 import renderChatMessage from "./hooks/renderChatMessage.ts";
 import renderCombatTracker from "./hooks/renderCombatTracker.ts";
-import { renderRollInterface } from "./hooks/helpers/renderRollIntercace.ts";
 
 Hooks.once("init", init);
 Hooks.once("i18nInit", i18nInit);
@@ -17,13 +16,17 @@ Hooks.on("activateAbstractSidebarTab", activateAbstractSidebarTab);
 
 Hooks.on("activateAbstractSidebarTab", () => {
   const chatMessage = document.querySelector("#chat-message");
-  const rollInterface = document.querySelector("#roll-interface-wrapper");
 
-  if (rollInterface) {
-    rollInterface.remove();
-    chatMessage?.after(rollInterface);
+  const rollInterface = document.querySelector(
+    "#roll-interface-wrapper",
+  ) as HTMLElement;
+
+  if (!chatMessage) {
+    document.append(rollInterface);
+    (rollInterface as HTMLElement).hidden = true;
   } else {
-    renderRollInterface();
+    chatMessage.after(rollInterface);
+    rollInterface.hidden = false;
   }
 });
 
