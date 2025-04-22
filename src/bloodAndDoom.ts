@@ -16,8 +16,15 @@ Hooks.once("ready", ready);
 Hooks.on("activateAbstractSidebarTab", activateAbstractSidebarTab);
 
 Hooks.on("activateAbstractSidebarTab", () => {
-  document.querySelector("#roll-interface-wrapper")?.remove();
-  renderRollInterface();
+  const chatMessage = document.querySelector("#chat-message");
+  const rollInterface = document.querySelector("#roll-interface-wrapper");
+
+  if (rollInterface) {
+    rollInterface.remove();
+    chatMessage?.after(rollInterface);
+  } else {
+    renderRollInterface();
+  }
 });
 
 Hooks.on("collapseSidebar", collapseSidebar);
