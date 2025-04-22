@@ -244,11 +244,11 @@ $die-sizes: "4", "6", "8", "10", "12";
 }
 
 .system-blood-and-doom .bnd-action-dice-expand-button {
+    --button-size: auto;
+
     display: flex;
     align-items: center;
     gap: 0.375rem;
-    height: auto;
-    min-height: 0;
     width: fit-content;
     margin: 0;
     line-height: 1;
